@@ -1,0 +1,29 @@
+use case diagram
+Use Case Diagram is a visual representation in Unified Modeling Language (UML) that depicts how users (actors) interact with a system to achieve specific goals or perform certain tasks. 
+
+actor 
+Actors are external entities that interact with the system
+ actors initiate use cases and receive the outcomes
+
+use cases
+specific things your system can do.
+“Place Order,” “Track Delivery,” or “Update Product Information”. Use cases are represented by ovals.
+
+system boundary
+The system boundary is a visual representation of the scope or limits of the system you are modeling. It defines what is inside the system and what is outside. The boundary helps to establish a clear distinction between the elements that are part of the system and those that are external to it. The system boundary is typically represented by a rectangular box that surrounds all the use cases of the system.
+
+relationship
+relationships play a crucial role in depicting the interactions between actors and use cases.
+1.Association Relationship
+	In simple terms, the Association Relationship in a Use Case Diagram is like drawing a line between an actor (like a user) and 	a task (use case) to show that the user is involved in or interacts with that specific task. It's a way of visually connecting 	who does what in a system.
+2. Include Relationship
+	The Include Relationship indicates that a use case includes the functionality of another use case. It is denoted by a dashed 	arrow pointing from the including use case to the included use case. This relationship promotes modular and reusable design.
+
+3.extended
+	The Extend Relationship illustrates that a use case can be extended by another use case under specific conditions. It is 	represented by a dashed arrow with the keyword “extend.” This relationship is useful for handling optional or exceptional 	behavior.
+
+generalised
+	The Generalization Relationship establishes an “is-a” connection between two use cases, indicating that one use case is a specialized version of another. It is represented by an 	arrow pointing from the specialized use case to the general use case.
+
+	
+

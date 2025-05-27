@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto ;
+    perspective: 10px;
+}
+.container{
+   position: relative;
+   display: flex;
+   justify-content: center; 
+   align-items: center;
+   height:100%;
+   transform-style: preserve-3d;
+   z-index:-1;
+
+}
+.background,.foreground
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index:-1;
+}
+.background{
+    transform: translatez(-40px) scale(5);
+}
+.foreground{
+    transform: translatez(-20px) scale(3.5);
+}
+h1{
+    position:absolute;
+    top: 12rem;
+    left: 4rem;
+    font-size: 10rem;
+    color: white;
+    letter-spacing: 4px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+section{
+    background-color: rgb(45,45,45); /* section ke karan text wala portion black hai ye apply ho rha hai*/
+    color: white;
+    padding: 5rem 0;
+    /*padding topbottom and left right*/
+}
+.secondaryheading{/* for adventure time*/
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+.text{
+    font-size:1.3rem;
+    padding: 0 10rem;
+    margin: 3rem 0;
+}
+.bg{/* ye bg  class 3no bg 1 2 3 ke common properties keliye hai*/
+    position: relative;/* relative ka matlab apne original position se kaise dikhoge, to height 500 px matlab ek bar me bs 500px hi dikhegi
+    to uske bad nya text apne aap aa jayega jisse scroll jaisa dikhega but text  scroll nhi ho rha h bs esa dikh rha h */
+    width: 100%;
+    height: 500px;
+    background-attachment: fixed;/* background sath me scroll na ho fixed rahe isiliye*/
+    background-position: center;
+    background-size: cover;/* given width ya height me image ko cover krne ke liye*/
+}
+.desc{/* ye bs para ,biking,surfing wale div ke liye hai*/
+    position: absolute; /* absolute issi liye taki desc wale cheeze bg1 bg2 bg3 pe centre aa jaye or scroll ho jaise adventure
+    kyuki absolute matlab tum relative ke respect me move ke rhe ho to scroll prne per agar relative
+     halka move hua to absolute bhi uske respect memove karega*/
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 10px 5px 5px black;
+    padding: 0.5rem 2.5rem;
+    top:50%;
+    left:50%;
+    color: black;
+    font-size:3.5rem;
+    transform: translateX(-50%) translateY(-50%);/*translate x h matlab x me kitna age piche same for y axis*/
+}
+
+.bg1{
+    background-image: url(imagestack/sql_first.jpg);
+}
+.bg2{
+    background-image: url(imagestack/sql\ \(2\).jpg);
+}
+.bg3{
+    background-image: url(imagestack/image.png);
+}
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    color: #3498db;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  
+  .custom-button:hover {
+    background-color: #3498db;
+    color: #fff;
+  }
+  .button-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+::-webkit-scrollbar {
+    width: 12px; /* Adjust the width as needed */
+  }
+
+  /* Style for the scrollbar track */
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color of the track */
+  }
+
+  /* Style for the scrollbar handle (scroller) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #96e9fa; /* Color of the scroller */
+    border-radius: 6px; /* Rounded corners of the scroller */
+  }
+
+  /* Style for the entire length of the scrollbar track */
+  ::-webkit-scrollbar-track-piece {
+    background-color: lightblue; /* Color of the entire track */
+  }
+
+  /* Optional: Hover effect on the scroller */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: darkblue; /* Color on hover */
+  }
